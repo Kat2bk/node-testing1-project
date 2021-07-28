@@ -9,11 +9,20 @@ describe('[Exercise 1] trimProperties', () => {
     expect(actual).toEqual(expected)
   })
   // test('[2] returns a copy, leaving the original object intact', () => {})
+  it('[2] returns a copy, leaving the original object intact', () => {
+    expect(actual).not.toEqual(input)
+  })
 })
 
 describe('[Exercise 2] trimPropertiesMutation', () => {
   // test('[3] returns an object with the properties trimmed', () => {})
   // test('[4] the object returned is the exact same one we passed in', () => {})
+  it('[3] returns an object with the properties trimmed', () => {
+    expect(actual).toEqual(expected)
+  })
+  it('[4] the object returned is the exact same one we passed in', () => {
+    expect(actual).toBe(input)
+  })
 })
 
 describe('[Exercise 3] findLargestInteger', () => {
